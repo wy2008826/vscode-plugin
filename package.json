@@ -1,4 +1,7 @@
 {
+  "name":"wy-vscode-plugin",
+  "version":"1.0.0",
+  "publisher": "wypublishvscode",
   "activationEvents": [
     "onCommand:extension.sayHello"
   ],
@@ -9,7 +12,14 @@
       "title": "Hello World"
     }]
   },
-  "dependencies": {
+  "repository": {
+		"type": "git",
+		"url": "https://github.com/wy2008826/vscode-plugin.git"
+	},
+  "devDependencies": {
     "vscode": "^1.1.37"
+  },
+  "engines": {
+    "vscode": "^1.40.0"
   }
 }
