@@ -8,7 +8,7 @@ exports.activate = function(context) {
     console.log('恭喜，您的扩展“vscode-plugin-demo”已被激活！');
     // 注册命令
     context.subscriptions.push(vscode.commands.registerCommand('extension.sayHello', function () {
-        vscode.window.showInformationMessage('Hello World!');
+        vscode.window.showInformationMessage('Hello World2!');
     }));
 };
 
