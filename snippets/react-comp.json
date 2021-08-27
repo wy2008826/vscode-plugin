@@ -1,5 +1,5 @@
 {
-	"wy-antd-modal": {
+	"snippets-antd-modal": {
 		"prefix": "react:comp.modal",
 		"body": [
 			"<Modal title={title}",
