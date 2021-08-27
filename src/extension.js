@@ -15,7 +15,6 @@ let deActives = [
     webview.deactivateCb
 ] 
 
-
 /**
  * 插件被激活时触发，所有代码总入口
  * @param {*} context 插件上下文

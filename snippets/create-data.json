@@ -1,0 +1,11 @@
+{
+	"data-create-list": {
+		"prefix": "data:array",
+		"body": [
+      "[",
+      "  {name:'$1',id:$2},",
+      "]"
+		],
+		"description": "快速生成列表数组"
+	}
+}

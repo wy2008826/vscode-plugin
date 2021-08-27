@@ -31,6 +31,7 @@ vscode插件、提升开发效率
 - 通过  import ./ | ../../ 可以自动提示并引入组件,避免手动查找引入
 - 通过 import React  自动引入 React的代码
 - log -> console.log();
+- nameIds -> [{name:'',id:''}]
 
 #### 快速生成页面
 

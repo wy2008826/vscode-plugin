@@ -1,0 +1,9 @@
+{
+  "wy-console": {
+		"prefix": "log",
+		"body": [
+			"console.log('$1');"
+		],
+		"description": "快速输出 console.log()"
+	}
+}

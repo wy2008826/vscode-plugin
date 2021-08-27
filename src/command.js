@@ -2,6 +2,7 @@
  * 一些常见的命令
  * 
  * **/
+console.log(123);
 
 const  vscode = require('vscode');
 /**

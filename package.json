@@ -21,7 +21,15 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets.json"
+        "path": "./snippets/js.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/create-data.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react-comp.json"
       }
     ]
   },
