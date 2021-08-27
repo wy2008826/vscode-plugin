@@ -1,20 +1,22 @@
 const vscode = require('vscode');
+const { active:commandActive, deactivate:commandDeactivate} = require('./command.js');
+const { active:webviewActive, deactivate:webviewDeactivate} = require('./webview.js');
+
+let actives = [ commandActive,webviewActive ] 
+let deActives = [ commandDeactivate,webviewDeactivate ] 
 
 /**
  * 插件被激活时触发，所有代码总入口
  * @param {*} context 插件上下文
  */
 exports.activate = function(context) {
-    console.log('恭喜，您的扩展“vscode-plugin-demo”已被激活！');
-    // 注册命令
-    context.subscriptions.push(vscode.commands.registerCommand('extension.sayHello', function () {
-        vscode.window.showInformationMessage('Hello World2!');
-    }));
+    actives.map( activeFn => typeof activeFn === 'function' && activeFn(context) )
 };
 
 /**
  * 插件被释放时触发
  */
+
 exports.deactivate = function() {
-    console.log('您的扩展“vscode-plugin-demo”已被释放！')
+    deActives.map( deactiveFn => typeof deactiveFn === 'function' && deactiveFn(context) )
 };
