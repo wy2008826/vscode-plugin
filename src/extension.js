@@ -1,15 +1,27 @@
-const vscode = require('vscode');
-const { active:commandActive, deactivate:commandDeactivate} = require('./command.js');
-const { active:webviewActive, deactivate:webviewDeactivate} = require('./webview.js');
+/**
+ * 所有功能的总入口 
+ * **/
 
-let actives = [ commandActive,webviewActive ] 
-let deActives = [ commandDeactivate,webviewDeactivate ] 
+const vscode = require('vscode');
+const command = require('./command')
+const webview = require('./webview')
+
+let actives = [ 
+    command.activateCb,
+    webview.activateCb 
+] 
+let deActives = [ 
+    command.deactivateCb,
+    webview.deactivateCb
+] 
+
 
 /**
  * 插件被激活时触发，所有代码总入口
  * @param {*} context 插件上下文
  */
 exports.activate = function(context) {
+    // 注册命令
     actives.map( activeFn => typeof activeFn === 'function' && activeFn(context) )
 };
 

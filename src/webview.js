@@ -1,4 +1,7 @@
-
+/**
+ * 打开一个 webview 界面，可以进行一些数据的读输入和读取
+ * 
+ * **/
 
 const vscode = require('vscode');
 
@@ -6,7 +9,7 @@ const vscode = require('vscode');
  * 插件被激活时触发，所有代码总入口
  * @param {*} context 插件上下文
  */
-exports.activate = function(context) {
+exports.activateCb = function(context) {
   context.subscriptions.push(vscode.commands.registerCommand('extension.openWebview', function (uri) {
     // 创建webview
       const panel = vscode.window.createWebviewPanel(
@@ -18,7 +21,7 @@ exports.activate = function(context) {
               retainContextWhenHidden: true, // webview被隐藏时保持状态，避免被重置
           }
       );
-      panel.webview.html = `<html><body>你好，我是Webview</body></html>`
+      panel.webview.html = `<html><body>你好，我是Webview <input /> </body></html>`
     })
   )
 };
@@ -26,6 +29,6 @@ exports.activate = function(context) {
 /**
  * 插件被释放时触发
  */
-exports.deactivate = function() {
+exports.deactivateCb = function() {
     console.log('您的扩展“vscode-plugin-demo”已被释放！')
 };

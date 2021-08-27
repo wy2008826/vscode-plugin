@@ -1,42 +1,43 @@
 {
-	"name": "wy-vscode-plugin",
-	"version": "1.0.0",
-	"publisher": "wypublishvscode",
-	"activationEvents": [
-		"onCommand:extension.sayHello"
-	],
-	"main": "./src/extension",
-	"contributes": {
-		"commands": [
-			{
-				"command": "extension.sayHello",
-				"title": "Hello World"
-			},
-			{
-				"command": "extension.openWebview",
-				"title": "open Webview"
-			}
-		],
-		"snippets": [
-			{
-					"language": "javascript",
-					"path": "./snippets.json"
-			}
-		]
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/wy2008826/vscode-plugin.git"
-	},
-	"devDependencies": {
-		"vscode": "^1.1.37"
-	},
-	"engines": {
-		"vscode": "^1.40.0"
-	},
-	"__metadata": {
-		"id": "8a1a1558-7a0e-426e-9784-a413a37892ac",
-		"publisherDisplayName": "wy_publish_vscode",
-		"publisherId": "f4fbbf92-c024-4e8f-a141-039afea7e781"
-	}
+  "name": "wy-vscode-plugin",
+  "version": "1.0.0",
+  "publisher": "wypublishvscode",
+  "activationEvents": [
+    "onCommand:extension.sayHello",
+    "onCommand:extension.openWebview"
+  ],
+  "main": "./src/extension",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.sayHello",
+        "title": "Hello World"
+      },
+      {
+        "command": "extension.openWebview",
+        "title": "openWebview"
+      }
+    ],
+    "snippets": [
+      {
+        "language": "javascript",
+        "path": "./snippets.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wy2008826/vscode-plugin.git"
+  },
+  "devDependencies": {
+    "vscode": "^1.1.37"
+  },
+  "engines": {
+    "vscode": "^1.40.0"
+  },
+  "__metadata": {
+    "id": "8a1a1558-7a0e-426e-9784-a413a37892ac",
+    "publisherDisplayName": "wy_publish_vscode",
+    "publisherId": "f4fbbf92-c024-4e8f-a141-039afea7e781"
+  }
 }
