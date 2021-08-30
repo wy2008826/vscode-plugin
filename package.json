@@ -25,7 +25,11 @@
       },
       {
         "language": "javascript",
-        "path": "./snippets/create-data.json"
+        "path": "./snippets/data-create.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/react-page.json"
       },
       {
         "language": "javascript",
