@@ -4,7 +4,7 @@
   "publisher": "wypublishvscode",
   "activationEvents": [
     "onCommand:extension.sayHello",
-    "onCommand:extension.openWebview"
+    "onCommand:openConfigPage"
   ],
   "main": "./src/index",
   "contributes": {
@@ -14,8 +14,8 @@
         "title": "Hello World"
       },
       {
-        "command": "extension.openWebview",
-        "title": "openWebview"
+        "command": "openConfigPage",
+        "title": "openConfigPage"
       }
     ],
     "snippets": [

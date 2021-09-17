@@ -10,8 +10,9 @@
   * @param {*} context 插件上下文
   */
  exports.activateCb = function(context) {
-   context.subscriptions.push(vscode.commands.registerCommand('extension.openWebview', function (uri) {
+   context.subscriptions.push(vscode.commands.registerCommand('openConfigPage', function (uri) {
      // 创建webview
+     console.log('创建webview')
        const panel = vscode.window.createWebviewPanel(
            'testWebview', // viewType
            "WebView演示", // 视图标题
@@ -21,7 +22,25 @@
                retainContextWhenHidden: true, // webview被隐藏时保持状态，避免被重置
            }
        );
-       panel.webview.html = `<html><body>你好，我是Webview <input /> </body></html>`
+       panel.webview.html = `<html> 
+       <script>
+          function clickSend(e){
+            console.log("clickSend",e)
+            vscode.window.showInformationMessage('received');
+          }
+       </script>
+       <body>
+           <select name="pageType"><option value="list">列表</option></select>
+           <button onclick="function(){document.getElementsByTagName("button")[0].innetText='123' }">点击发送</button>
+       </body>
+       </html>`;
+      
+       // 插件接收到 webview 的数据
+       panel.webview.onDidReceiveMessage(message => {
+        console.log('插件收到的消息：', message);
+      }, undefined, context.subscriptions);
+
+
      })
    )
  };

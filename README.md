@@ -62,7 +62,7 @@ vscode插件、提升开发效率
     - react:page.detail.form.table.table-edit
   - component
     - react:comp.modal
-    - react:comp.tale
+    - react:comp.table
     - react:comp.modal
 
 

@@ -4,7 +4,7 @@
 
 const vscode = require('vscode');
 const command = require('../command/index')
-const webview = require('./webview/index')
+const webview = require('../webview/index')
 
 let actives = [ 
     command.activateCb,
