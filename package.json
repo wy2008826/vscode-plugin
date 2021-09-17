@@ -6,7 +6,7 @@
     "onCommand:extension.sayHello",
     "onCommand:extension.openWebview"
   ],
-  "main": "./src/extension",
+  "main": "./src/index",
   "contributes": {
     "commands": [
       {

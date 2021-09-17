@@ -3,8 +3,8 @@
  * **/
 
 const vscode = require('vscode');
-const command = require('./command')
-const webview = require('./webview')
+const command = require('../command/index')
+const webview = require('./webview/index')
 
 let actives = [ 
     command.activateCb,
@@ -31,3 +31,4 @@ exports.activate = function(context) {
 exports.deactivate = function() {
     deActives.map( deactiveFn => typeof deactiveFn === 'function' && deactiveFn(context) )
 };
+
