@@ -1,0 +1,8 @@
+{
+  "key": "cmd+k 1",
+  "command": "editor.action.insertSnippet",
+  "when": "editorTextFocus",
+  "args": {
+    "snippet": "console.log($1)$0"
+  }
+}

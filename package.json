@@ -29,11 +29,11 @@
       },
       {
         "language": "javascript",
-        "path": "./snippets/react-page.json"
+        "path": "./snippets/react-comp.json"
       },
       {
         "language": "javascript",
-        "path": "./snippets/react-comp.json"
+        "path": "./snippets/react-page.modal.json"
       }
     ]
   },
