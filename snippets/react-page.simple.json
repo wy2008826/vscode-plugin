@@ -8,8 +8,6 @@
 			"export default  (props,ref) => {",
 			"  const [visible,setVisible] = useState(false);",
 			"",
-			"",
-			"",
 			"  return <Card title={'-----'} >",
 			"    Card",
 			"  </Card>",
