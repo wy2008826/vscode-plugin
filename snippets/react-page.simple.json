@@ -1,0 +1,20 @@
+{
+	"snippets-react-page-modal-form": {
+		"prefix": "react:page.simple",
+		"body": [
+			"import React, { useState,useMemo} from 'react'",
+			"import { Card } from 'antd'",
+			"",
+			"export default  (props,ref) => {",
+			"  const [visible,setVisible] = useState(false);",
+			"",
+			"",
+			"",
+			"  return <Card title={'-----'} >",
+			"    Card",
+			"  </Card>",
+			"}"
+		],
+		"description": "快速输出React:Page.Simple 页面"
+	}
+}
