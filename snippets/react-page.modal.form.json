@@ -2,8 +2,8 @@
 	"snippets-react-page-modal-form": {
 		"prefix": "react:page.modal.form",
 		"body": [
-			"import React, { useState,useEffect,forwardRef,useImperativeHandle} from 'react'",
-			"import { Modal ,Form} from 'antd'",
+			"import React, { useState,useMemo,forwardRef,useImperativeHandle} from 'react'",
+			"import { Modal , Form, Col, Input} from 'antd'",
 			"import {useTableFilterLayout} from 'hooks';",
 			"",
 			"export default  forwardRef((props,ref) => {",
@@ -13,7 +13,7 @@
 			"",
 			"  useImperativeHandle(ref,()=>{",
 			"    return {",
-			"      setVisible",
+			"      setVisible,",
 			"      form",
 			"    }",
 			"  },[form]);",
